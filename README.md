@@ -1,6 +1,15 @@
-# Movie Recommender App
+# CineMatch - Movie Recommender App
 
-A movie recommendation app powered by Google's Gemini AI.
+A professional movie recommendation app powered by The Movie Database (TMDB) API.
+
+## Features
+
+- 🎬 Browse thousands of movies by genre
+- 🔍 Search movies by keyword
+- ⭐ View ratings and detailed information
+- 🖼️ High-quality movie posters
+- 📱 Responsive design for all devices
+- ⚡ Fast and intuitive interface
 
 ## Setup
 
@@ -9,7 +18,7 @@ A movie recommendation app powered by Google's Gemini AI.
 npm install
 ```
 
-2. Get your Gemini API key from [Google AI Studio](https://makersuite.google.com/app/apikey)
+2. Get your TMDB API key from [The Movie Database](https://www.themoviedb.org/settings/api)
 
 3. Create a `.env` file:
 ```bash
@@ -18,7 +27,7 @@ copy .env.example .env
 
 4. Add your API key to `.env`:
 ```
-GEMINI_API_KEY=your_actual_api_key_here
+TMDB_API_KEY=your_actual_api_key_here
 ```
 
 5. Start the server:
@@ -30,4 +39,8 @@ npm start
 
 ## Usage
 
-Simply describe what kind of movies you like, and Gemini will recommend 5 movies tailored to your preferences!
+Simply type a genre (action, comedy, horror, romance, scifi) or search for specific movies. Browse up to 60 movies per search with the "Load More" feature!
+
+## Supported Genres
+
+Action, Adventure, Animation, Comedy, Crime, Documentary, Drama, Family, Fantasy, History, Horror, Music, Mystery, Romance, Sci-Fi, Thriller, War, Western
