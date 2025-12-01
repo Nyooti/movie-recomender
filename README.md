@@ -1,6 +1,6 @@
 # CineMatch - Movie Recommender App
 
-A professional movie recommendation app powered by The Movie Database (TMDB) API.
+A professional movie recommendation app powered by The Movie Database (TMDB) API, built with Streamlit.
 
 ## Features
 
@@ -13,34 +13,38 @@ A professional movie recommendation app powered by The Movie Database (TMDB) API
 
 ## Setup
 
-1. Install dependencies:
+1. Install Python dependencies:
 ```bash
-npm install
+pip install -r requirements.txt
 ```
 
-2. Get your TMDB API key from [The Movie Database](https://www.themoviedb.org/settings/api)
-
-3. Create a `.env` file:
+2. Run the Streamlit app:
 ```bash
-copy .env.example .env
+streamlit run app.py
 ```
 
-4. Add your API key to `.env`:
-```
-TMDB_API_KEY=your_actual_api_key_here
-```
-
-5. Start the server:
-```bash
-npm start
-```
-
-6. Open your browser to `http://localhost:3000`
+3. Open your browser to `http://localhost:8501`
 
 ## Usage
 
-Simply type a genre (action, comedy, horror, romance, scifi) or search for specific movies. Browse up to 60 movies per search with the "Load More" feature!
+- **Browse by Genre**: Select a genre from the dropdown and click "Find Movies"
+- **Search by Keyword**: Enter a movie name or keyword and click "Search"
+- **Load More**: Click "Load More Movies" to see additional results (up to 60 movies)
 
 ## Supported Genres
 
 Action, Adventure, Animation, Comedy, Crime, Documentary, Drama, Family, Fantasy, History, Horror, Music, Mystery, Romance, Sci-Fi, Thriller, War, Western
+
+## Deployment
+
+Deploy to Streamlit Cloud:
+1. Push your code to GitHub
+2. Go to [share.streamlit.io](https://share.streamlit.io)
+3. Connect your repository
+4. Deploy!
+
+## Tech Stack
+
+- **Frontend**: Streamlit
+- **API**: The Movie Database (TMDB)
+- **Language**: Python 3.8+
