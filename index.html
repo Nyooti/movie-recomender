@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NYTMovies - Discover Your Next Favorite Movie</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-content">
+      <div class="logo">
+        <span class="logo-icon">🎬</span>
+        <span class="logo-text">NYTMovies</span>
+      </div>
+      <div class="nav-badge">Powered by NYOOTI</div>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">Discover Your Next Favorite Movie</h1>
+      <p class="hero-subtitle">Explore thousands of movies by genre, mood, or theme. Find exactly what you're looking for.</p>
+      
+      <div class="search-container">
+        <div class="search-box">
+          <svg class="search-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16zM18 18l-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <input 
+            type="text"
+            id="preferences" 
+            placeholder="Try 'action', 'romance', 'thriller', or 'comedy'"
+            class="search-input"
+          />
+        </div>
+        <button id="getRecommendations" class="search-btn">
+          <span>Search Movies</span>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="genre-chips">
+        <span class="chip-label">Popular:</span>
+        <button class="chip" data-genre="action">Action</button>
+        <button class="chip" data-genre="comedy">Comedy</button>
+        <button class="chip" data-genre="horror">Horror</button>
+        <button class="chip" data-genre="romance">Romance</button>
+        <button class="chip" data-genre="scifi">Sci-Fi</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="main-content">
+    <div id="loading" class="loading hidden">
+      <div class="spinner"></div>
+      <p>Finding perfect movies for you...</p>
+    </div>
+    
+    <div id="results" class="results"></div>
+  </div>
+
+  <footer class="footer">
+    <p>Movie data provided by <a href="https://www.themoviedb.org/" target="_blank">The Movie Database (TMDB)</a></p>
+  </footer>
+  
+  <script src="app.js"></script>
+</body>
+</html>
